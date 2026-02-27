@@ -6,7 +6,7 @@
 
     <groupId>com.matheuscodes</groupId>
     <artifactId>bode-plotter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Bode Plotter</name>
@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.1</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
+        <sonar.organization>matheuscodes-analysed</sonar.organization>
     </properties>
 
     <dependencies>
@@ -39,6 +40,13 @@
         <testSourceDirectory>test/java</testSourceDirectory>
 
         <plugins>
+            <!-- Sonar -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>5.5.0.6356</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
