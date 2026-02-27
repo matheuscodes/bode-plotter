@@ -19,6 +19,7 @@
         <junit.version>5.10.1</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
         <sonar.organization>matheuscodes-analysed</sonar.organization>
+        <sonar.coverage.exclusions>**/Main.java</sonar.coverage.exclusions>
     </properties>
 
     <dependencies>
@@ -104,7 +105,6 @@
                 <configuration>
                     <excludes>
                         <exclude>main/**</exclude>
-                        <exclude>math/PlottingCanvas.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
